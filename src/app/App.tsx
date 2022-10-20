@@ -15,7 +15,6 @@ const App = () => {
         <div className={classNames('app', { hovered: true }, [theme])}>
             <Suspense fallback="">
                 <Navbar />
-
                 <div className="content-page">
                     <SideBar />
                     <AppRouter />
