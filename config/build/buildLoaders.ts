@@ -34,12 +34,12 @@ export function buildLoaders({ isDev }:BuildOptions): webpack.RuleSetRule[] {
         test: /\.(js|jsx|tsx)$/,
         exclude: /node_modules/,
         use: {
-            loader: "babel-loader",
+            loader: 'babel-loader',
             options: {
-                presets: ['@babel/preset-env']
-            }
-        }
-    }
+                presets: ['@babel/preset-env'],
+            },
+        },
+    };
 
     const fileLoader = {
         test: /\.(png|jpe?g|gif|woff|woff2)$/i,

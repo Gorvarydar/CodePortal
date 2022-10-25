@@ -15,7 +15,13 @@ export const Button:FC<ButtonProps> = (props) => {
         children, className, theme = ButtonTheme.DEFAULT, ...otherProps
     } = props;
     return (
-        <button type="button" className={classNames(cls.Button, {}, [className, cls.default])} {...otherProps}>
+        <button
+            type="button"
+            className={
+                classNames(cls.Button, {}, [className, cls.default])
+            }
+            {...otherProps}
+        >
             {children}
         </button>
     );

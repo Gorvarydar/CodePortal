@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useEffect } from 'react';
 import './styles/index.scss';
 import AppRouter from 'app/providers/Router/ui/AppRouter';
 import { Navbar } from 'widgets/Navbar';
@@ -11,6 +11,7 @@ import { useTheme } from './providers/ThemeProvider/lib/useTheme';
 
 const App = () => {
     const { theme } = useTheme();
+
     return (
         <div className={classNames('app', { hovered: true }, [theme])}>
             <Suspense fallback="">
